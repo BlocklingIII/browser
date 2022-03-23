@@ -4,7 +4,7 @@ button.addEventListener('click', search());
 
 function search() 
 {
-    let research = document.getElementById('research').value;
+    let research = document.getElementById('resarch').value;
     if (research = "google.com")
     {
         let iframe = document.createElement('iframe');
@@ -12,5 +12,6 @@ function search()
         iframe.width = "400";
         iframe.height = "400";
         iframe.frameBorder = "0";
+        loadSubscribe.appendChild(iframe);
     }
 }
