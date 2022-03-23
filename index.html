@@ -7,39 +7,10 @@
 
 <body>
     <div id="search-bar">
-        <input type="text" id="resarch">
-        <input type="button" value="Search" id="search" onclick="search()">
-        <p id="text">v1.1.15</p>
     </div>
     <div id="canvas">
-        <iframe id="iframe" src="https://www.google.com/search?igu=1" width="1000px" height="700px" title="google.com" loading="eager"></iframe>
+        <iframe id="iframe" src="https://www.google.com/search?igu=1" width="100%" height="100%" style="margin-top: 50px; border: none;" title="google.com" loading="eager"></iframe>
     </div>
-
-    <script>
-        let button = document.getElementById('search');
-        let canvas = document.getElementById('canvas');
-        let search_bar = document.getElementById('search-bar');
-        let iframe = document.getElementById('iframe');
-        
-        function search() 
-        {
-            let research = document.getElementById('resarch').value;
-            search_bar.innerHTML = "<h4>" + research + "</h4>";
-            if (research != '')
-            {
-                iframe.src = "https://www.google.com/search?igu=1"
-            }
-        }
-        function googleSearch(research)
-        {
-            var gcse = document.createElement('script');
-            gcse.type = 'text/javascript';
-            gcse.async = true;
-            gcse.src = 'https://cse.google.com/cse.js?cx=' + research;
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(gcse, s);
-        }
-    </script>
 
 </body>
 </html>
