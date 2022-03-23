@@ -23,7 +23,7 @@
         function search() 
         {
             let research = document.getElementById('resarch').value;
-            search_bar.innerHTML = "<h1>" + research + "</h1>";
+            search_bar.innerHTML = "<h4>" + research + "</h4>";
             if (research = "google.com")
             {
                 let iframe = document.createElement('iframe');
@@ -32,7 +32,6 @@
                 iframe.height = "700";
                 iframe.frameBorder = "0";
                 iframe.style.border = "none";
-                iframe.style.background ="black";
                 canvas.appendChild(iframe);
             }
         }
