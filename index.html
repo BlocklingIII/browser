@@ -7,18 +7,20 @@
 
 <body>
     <div id="search-bar">
-        <input type="text" id="resarch" onclick="search()">
+        <input type="text" id="resarch">
         <input type="button" value="Search" id="search">
         <p id="text">v1.1.3</p>
     </div>
-    <div id="canvas" style="margin-top: 50px;"></div>
+    <div id="canvas">
+
+    </div>
 
     <script>
         let button = document.getElementById('search');
         let canvas = document.getElementById('canvas');
         let search_bar = document.getElementById('search-bar');
         
-        function search() 
+        button.click = function search() 
         {
             let research = document.getElementById('resarch').value;
             search_bar.innerHTML = "<h1>" + research + "</h1>";
@@ -27,7 +29,7 @@
                 let iframe = document.createElement('iframe');
                 iframe.src = "google.com";
                 iframe.width = "1000";
-                iframe.height = "1000";
+                iframe.height = "700";
                 iframe.frameBorder = "0";
                 iframe.style.border = "none";
                 iframe.style.background ="black";
