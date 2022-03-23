@@ -9,10 +9,10 @@
     <div id="search-bar">
         <input type="text" id="resarch">
         <input type="button" value="Search" id="search" onclick="search()">
-        <p id="text">v1.1.14</p>
+        <p id="text">v1.1.15</p>
     </div>
     <div id="canvas">
-        <iframe src="http://www.google.com/custom?q=&btnG=Search" width="1000px" height="700px" title="google.com" loading="eager"></iframe>
+        <iframe src="http://www.google.co.in/" width="1000px" height="700px" title="google.com" loading="eager"></iframe>
     </div>
 
     <script>
@@ -24,18 +24,19 @@
         {
             let research = document.getElementById('resarch').value;
             search_bar.innerHTML = "<h4>" + research + "</h4>";
-            if (research = "google.com")
-            {
-                let iframe = document.createElement('iframe');
-                iframe.src = "";
-                iframe.width = "1000";
-                iframe.height = "700";
-                iframe.frameBorder = "0";
-                iframe.style.border = "none";
-                canvas.appendChild(iframe);
-            }
+            
+        }
+        function googleSearch(research)
+        {
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + research;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
         }
     </script>
+
 </body>
 </html>
 
