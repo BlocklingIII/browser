@@ -1,8 +1,7 @@
 let button = document.getElementById('search');
+let canvas = document.getElementById('canvas');
 
-button.addEventListener('click', search());
-
-function search() 
+button.onclick = function search() 
 {
     let research = document.getElementById('resarch').value;
     if (research = "google.com")
@@ -12,6 +11,6 @@ function search()
         iframe.width = "400";
         iframe.height = "400";
         iframe.frameBorder = "0";
-        loadSubscribe.appendChild(iframe);
+        canvas.appendChild(iframe);
     }
 }
