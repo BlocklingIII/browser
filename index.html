@@ -8,7 +8,7 @@
 <body>
     <div id="search-bar">
         <input type="text" id="resarch">
-        <input type="button" value="Search" id="search">
+        <input type="button" value="Search" id="search" onclick="search()">
         <p id="text">v1.1.4</p>
     </div>
     <div id="canvas">
@@ -20,7 +20,7 @@
         let canvas = document.getElementById('canvas');
         let search_bar = document.getElementById('search-bar');
         
-        button.click = function search() 
+        function search() 
         {
             let research = document.getElementById('resarch').value;
             search_bar.innerHTML = "<h1>" + research + "</h1>";
