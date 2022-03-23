@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="height: 100%;">
+<html style="height: 100%; width: 100%; margin: 0; padding: 0;">
 <header>
     <meta charset="UTF-8">
     <title>Browser</title>
@@ -8,8 +8,8 @@
 <body>
     <div id="search-bar">
     </div>
-    <div id="canvas">
-        <iframe id="iframe" src="https://www.google.com/search?igu=1" style="top: 100px; bottom: 10px; width:100%"></iframe>
+    <div id="canvas" style="flex-direction: column;">
+        <iframe id="iframe" src="https://www.google.com/search?igu=1" style="flex-grow: 1; margin: 0; border: none; padding: 0;"></iframe>
     </div>
 
 </body>
