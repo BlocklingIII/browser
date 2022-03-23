@@ -2,10 +2,10 @@ let button = document.getElementById('search');
 let canvas = document.getElementById('canvas');
 let search_bar = document.getElementById('search-bar');
 
-button.onclick = function search() 
+function search() 
 {
     let research = document.getElementById('resarch').value;
-    search_bar.innerHTML += "<p>" + research + "</p>";
+    search_bar.innerHTML = "<h1>" + research + "</h1>";
     if (research = "google.com")
     {
         let iframe = document.createElement('iframe');
